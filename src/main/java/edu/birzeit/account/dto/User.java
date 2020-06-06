@@ -32,4 +32,9 @@ public class User {
         setId(Math.abs(new Random().nextLong()%10000));
         setName(name);
     }
+
+    public User(Long id, String name) {
+        setId(id);
+        setName(name);
+    }
 }

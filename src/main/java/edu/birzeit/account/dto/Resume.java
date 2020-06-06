@@ -19,7 +19,7 @@ public class Resume {
     @JsonProperty("work_experience")
     private String[] workExperience = new String[]{"workExperience 1", "workExperience 2"};
 
-    public Resume(Long userId) {
-        setUser(new User(userId));
+    public Resume(Long userId, String username) {
+        setUser(new User(userId, username));
     }
 }
